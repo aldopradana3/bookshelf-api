@@ -100,6 +100,7 @@ Bila buku berhasil dimasukkan, server harus mengembalikan respons dengan:
 API yang Anda buat harus dapat menampilkan seluruh buku yang disimpan melalui route:
 - Method : GET
 - URL: /books
+
 Server harus mengembalikan respons dengan:
 - Status Code : 200
 - Response Body:
