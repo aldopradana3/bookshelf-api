@@ -175,43 +175,6 @@ Bila buku dengan id yang dilampirkan ditemukan, maka server harus mengembalikan 
     }
 }
 ```
-### Kriteria 5 : API dapat menampilkan detail buku
-API yang Anda buat harus dapat menampilkan seluruh buku yang disimpan melalui route:
-- Method : GET
-- URL: /books/{bookId}
-Bila buku dengan id yang dilampirkan oleh client tidak ditemukan, maka server harus mengembalikan respons dengan:
-- Status Code : 404
-- Response Body:
-```
-{
-    "status": "fail",
-    "message": "Buku tidak ditemukan"
-}
-```
-Bila buku dengan id yang dilampirkan ditemukan, maka server harus mengembalikan respons dengan:
-- Status Code : 200
-- Response Body:
-```
-{
-    "status": "success",
-    "data": {
-        "book": {
-            "id": "aWZBUW3JN_VBE-9I",
-            "name": "Buku A Revisi",
-            "year": 2011,
-            "author": "Jane Doe",
-            "summary": "Lorem Dolor sit Amet",
-            "publisher": "Dicoding",
-            "pageCount": 200,
-            "readPage": 26,
-            "finished": false,
-            "reading": false,
-            "insertedAt": "2021-03-05T06:14:28.930Z",
-            "updatedAt": "2021-03-05T06:14:30.718Z"
-        }
-    }
-}
-```
 ### Kriteria 6 : API dapat mengubah data buku
 API yang Anda buat harus dapat mengubah data buku berdasarkan id melalui route:
 - Method : PUT
