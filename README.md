@@ -233,6 +233,7 @@ Bila buku berhasil diperbarui, server harus mengembalikan respons dengan:
 API yang Anda buat harus dapat menghapus buku berdasarkan id melalui route berikut:
 - Method : DELETE
 - URL: /books/{bookId}
+
 Bila id yang dilampirkan tidak dimiliki oleh buku manapun, maka server harus mengembalikan respons berikut:
 - Status Code : 404
 - Response Body:
