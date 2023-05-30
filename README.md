@@ -141,6 +141,7 @@ Jika belum terdapat buku yang dimasukkan, server bisa merespons dengan array boo
 API yang Anda buat harus dapat menampilkan seluruh buku yang disimpan melalui route:
 - Method : GET
 - URL: /books/{bookId}
+
 Bila buku dengan id yang dilampirkan oleh client tidak ditemukan, maka server harus mengembalikan respons dengan:
 - Status Code : 404
 - Response Body:
