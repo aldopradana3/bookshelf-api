@@ -208,7 +208,7 @@ Server harus merespons gagal bila:
 ```
 {
     "status": "fail",
-    "message": "Gagal memperbarui buku. Mohon isi nama buku"
+    "message": "Gagal memperbarui buku. readPage tidak boleh lebih besar dari pageCount"
 }
 ```
 - Id yang dilampirkan oleh client tidak ditemukkan oleh server. Bila hal ini terjadi, maka server akan merespons dengan:
